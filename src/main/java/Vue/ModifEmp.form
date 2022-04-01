@@ -8,12 +8,14 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="ee502" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="ee502" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-13011525"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="20873" class="javax.swing.JLabel">
@@ -21,7 +23,9 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Film:"/>
+              <font size="14" style="1"/>
+              <foreground color="-12632257"/>
+              <text value="Film :"/>
             </properties>
           </component>
           <component id="b79cb" class="javax.swing.JLabel">
@@ -29,7 +33,9 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Genre:"/>
+              <font size="14" style="1"/>
+              <foreground color="-12632257"/>
+              <text value="Genre :"/>
             </properties>
           </component>
           <component id="e333c" class="javax.swing.JLabel">
@@ -37,7 +43,9 @@
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Durée:"/>
+              <font size="14" style="1"/>
+              <foreground color="-12632257"/>
+              <text value="Durée :"/>
             </properties>
           </component>
           <component id="b8462" class="javax.swing.JLabel">
@@ -45,7 +53,9 @@
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Prix:"/>
+              <font size="14" style="1"/>
+              <foreground color="-12632257"/>
+              <text value="Prix :"/>
             </properties>
           </component>
           <component id="6b47c" class="javax.swing.JLabel">
@@ -53,49 +63,19 @@
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Description:"/>
+              <font size="14" style="1"/>
+              <foreground color="-12632257"/>
+              <text value="Description :"/>
             </properties>
           </component>
-          <component id="22105" class="javax.swing.JLabel" binding="Film">
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Film"/>
-            </properties>
-          </component>
-          <component id="77f64" class="javax.swing.JLabel" binding="Genre">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Genre"/>
-            </properties>
-          </component>
-          <component id="3df2e" class="javax.swing.JLabel" binding="Duree">
-            <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Durée"/>
-            </properties>
-          </component>
-          <component id="89500" class="javax.swing.JLabel" binding="Description">
-            <constraints>
-              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Description"/>
-            </properties>
-          </component>
-          <component id="fb6aa" class="javax.swing.JTextField" binding="prixTextField" default-binding="true">
+          <component id="fb6aa" class="javax.swing.JTextField" binding="prix">
             <constraints>
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
             <properties>
-              <text value="Prix"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="31fff" class="javax.swing.JButton" binding="retourButton" default-binding="true">
@@ -112,6 +92,46 @@
             </constraints>
             <properties>
               <text value="Modifier"/>
+            </properties>
+          </component>
+          <component id="d7a31" class="javax.swing.JTextField" binding="film">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="77f7c" class="javax.swing.JTextField" binding="genre">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="44844" class="javax.swing.JTextField" binding="duree">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e0b8d" class="javax.swing.JTextField" binding="description">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e87a8" class="javax.swing.JButton" binding="afficherButton" default-binding="true">
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Afficher"/>
             </properties>
           </component>
         </children>

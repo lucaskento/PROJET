@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Vue.ModifierClient">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-13011525"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="4e0ab" class="javax.swing.JLabel">
@@ -13,17 +15,19 @@
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Nom"/>
+          <font size="14" style="1"/>
+          <foreground color="-12632257"/>
+          <text value="Nom :"/>
         </properties>
       </component>
-      <component id="c91cc" class="javax.swing.JTextField" binding="nomTextField" default-binding="true">
+      <component id="c91cc" class="javax.swing.JTextField" binding="nomTextField">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <text value="Nom"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="376c3" class="javax.swing.JLabel">
@@ -31,7 +35,9 @@
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Penom"/>
+          <font size="14" style="1"/>
+          <foreground color="-12632257"/>
+          <text value="Prénom :"/>
         </properties>
       </component>
       <component id="6fa17" class="javax.swing.JTextField" binding="prenomTextField" default-binding="true">
@@ -41,7 +47,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Prenom"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="56554" class="javax.swing.JLabel">
@@ -49,7 +55,9 @@
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Mail"/>
+          <font size="14" style="1"/>
+          <foreground color="-12632257"/>
+          <text value="E-mail :"/>
         </properties>
       </component>
       <component id="21d11" class="javax.swing.JTextField" binding="mailTextField" default-binding="true">
@@ -59,17 +67,17 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Mail"/>
+          <text value=""/>
         </properties>
       </component>
-      <component id="3e6d8" class="javax.swing.JTextField" binding="loginTextField1" default-binding="true">
+      <component id="3e6d8" class="javax.swing.JTextField" binding="loginTextField" default-binding="true">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <text value="Login"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="5eee4" class="javax.swing.JLabel">
@@ -77,7 +85,9 @@
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Login"/>
+          <font size="14" style="1"/>
+          <foreground color="-12632257"/>
+          <text value="Identifiant :"/>
         </properties>
       </component>
       <component id="1084" class="javax.swing.JLabel">
@@ -85,7 +95,9 @@
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Mot de passe"/>
+          <font size="14" style="1"/>
+          <foreground color="-12632257"/>
+          <text value="Mot de passe :"/>
         </properties>
       </component>
       <component id="b68d1" class="javax.swing.JTextField" binding="motDePasseTextField" default-binding="true">
@@ -95,7 +107,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Mot de passe"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="3d557" class="javax.swing.JLabel">
@@ -103,7 +115,9 @@
           <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Type"/>
+          <font size="14" style="1"/>
+          <foreground color="-12632257"/>
+          <text value="Type :"/>
         </properties>
       </component>
       <component id="63cfe" class="javax.swing.JTextField" binding="typeTextField" default-binding="true">
@@ -113,7 +127,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Type"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="bb67c" class="javax.swing.JButton" binding="retourButton" default-binding="true">
@@ -130,6 +144,14 @@
         </constraints>
         <properties>
           <text value="Modifier"/>
+        </properties>
+      </component>
+      <component id="2ba9" class="javax.swing.JButton" binding="afficherButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Afficher"/>
         </properties>
       </component>
     </children>

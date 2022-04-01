@@ -5,7 +5,9 @@
     <constraints>
       <xy x="119" y="65" width="444" height="366"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-13011525"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="a7261" class="javax.swing.JLabel">
@@ -13,7 +15,9 @@
           <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Veuillez vous autentifier"/>
+          <font size="18" style="1"/>
+          <foreground color="-12632257"/>
+          <text value="Veuillez vous identifier"/>
           <verticalAlignment value="0"/>
           <verticalTextPosition value="0"/>
         </properties>
@@ -28,6 +32,8 @@
           <grid row="2" column="1" row-span="2" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font size="12" style="1"/>
+          <foreground color="-12632257"/>
           <text value="Mot de passe"/>
         </properties>
       </component>
@@ -36,31 +42,37 @@
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font size="12" style="1"/>
+          <foreground color="-12632257"/>
           <text value="Login "/>
         </properties>
       </component>
-      <component id="28c61" class="javax.swing.JTextField" binding="Login">
+      <component id="28c61" class="javax.swing.JTextField" binding="Champ_lg">
         <constraints>
           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="tristou"/>
+        </properties>
       </component>
-      <component id="13912" class="javax.swing.JTextField" binding="Mdp">
+      <component id="13912" class="javax.swing.JTextField" binding="Champ_mdp">
         <constraints>
           <grid row="2" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value=""/>
+        </properties>
       </component>
       <component id="a05c9" class="javax.swing.JButton" binding="NV">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Nouveau compte"/>
+          <text value="Entrer"/>
         </properties>
       </component>
     </children>
