@@ -6,10 +6,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MEmp extends JFrame {
-    private JButton modifierUnFilmButton;
+   private JButton modifierUnFilmButton;
     private JButton ajouterUnFilmButton;
     private JButton supprimerUnFilmButton;
     private JButton retourButton;
+    private JPanel mainPanel;
+    private JButton ajouterUnHoraireButton;
 
     public MEmp() {
 
@@ -52,8 +54,15 @@ public class MEmp extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose ();
-                FilmClient fcl = new FilmCLient();
+                FilmClient fcl = new FilmClient();
                 fcl.setVisible(true);
+            }
+        });
+        ajouterUnHoraireButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AjouterHoraire a = new AjouterHoraire();
+                a.setVisible(true);
             }
         });
     }

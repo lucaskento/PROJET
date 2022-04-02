@@ -9,6 +9,7 @@ public class FilmClient extends JFrame  {
     private JButton modifierFilmButton;
     private JPanel panel1;
     private JButton modifierClientButton;
+    private JButton modifierOffresButton;
 
     public FilmClient() {
 
@@ -17,7 +18,7 @@ public class FilmClient extends JFrame  {
         this.setResizable(false);
         this.setSize(500, 300);
         this.setLocationRelativeTo(null);
-        this.setContentPane(mainPanel);
+        this.setContentPane(panel1);
         this.pack();
 
         modifierFilmButton.addActionListener(new ActionListener() {
@@ -36,5 +37,14 @@ public class FilmClient extends JFrame  {
                 Mcli.setVisible(true);
             }
         });
+        modifierOffresButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {dispose();
+Offres of = new Offres();
+of.setVisible(true);
+            }
+        });
+
     }
 }

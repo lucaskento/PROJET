@@ -20,8 +20,6 @@ public class Page extends JFrame {
     public Page() {
         CreationFenetre();
         con.Connecter("cinema");
-
-
     }
 
     void CreationFenetre() {

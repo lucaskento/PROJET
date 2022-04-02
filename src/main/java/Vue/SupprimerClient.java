@@ -1,20 +1,19 @@
 package Vue;
 
+import Modele.Connexion;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class SupprimerClient  extends JFrame {
-    private JLabel Nom;
     private JPanel panel1;
-    private JLabel Prenom;
-    private JLabel Mail;
-    private JLabel Login;
-    private JLabel Mdp;
-    private JLabel Type;
     private JButton retourButton;
     private JButton supprimerButton;
+    private JTextField ID_client;
+    Connexion con = new Connexion();
 
     public SupprimerClient() {
 
@@ -23,7 +22,7 @@ public class SupprimerClient  extends JFrame {
         this.setResizable(false);
         this.setSize(500, 300);
         this.setLocationRelativeTo(null);
-        this.setContentPane(mainPanel);
+        this.setContentPane(panel1);
         this.pack();
 
         retourButton.addActionListener(new ActionListener() {
@@ -32,6 +31,21 @@ public class SupprimerClient  extends JFrame {
                 dispose();
                 MClient Mcli = new MClient();
                 Mcli.setVisible(true);
+            }
+        });
+        supprimerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                con.Connecter("cinema");
+                ArrayList<ArrayList<String>> L = con.doQuery("SELECT * FROM `clients`");
+                for (int i = 0; i < L.size(); i++) {
+                    if (ID_client.getText().equals(L.get(i).get(0)))
+                    {
+                        String query = "DELETE FROM `clients` WHERE `ID`="+L.get(i).get(0);
+                        con.doQuery(query);
+                    }
+                }
             }
         });
     }

@@ -64,7 +64,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value=""/>
+          <text value="hrd"/>
         </properties>
       </component>
       <component id="a05c9" class="javax.swing.JButton" binding="NV">
